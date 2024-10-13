@@ -1,69 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Food Pantry</title>
 </head>
+
 <body>
     <header>
-        <a href = "">Skip to Main Content</a>
-        <img src="/images/u-m_logo-horizontal-hex.jpg" alt="UMich Logo">
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
+        <a class="site-logo"><img src="../images/u-m_logo-horizontal-hex.jpg" alt="UMich Logo"></a>
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "academic.html">Academic Support</a></li>
-                <li><a href = "food.html">Food Pantry</a></li>
-                <li><a href = "caps.html">CAPS</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="academic.html">Academic Support</a></li>
+                <li><a href="food.html" class="active">Food Pantry</a></li>
+                <li><a href="caps.html">CAPS</a></li>
             </ul>
         </nav>
         <h1>Food Pantry</h1>
     </header>
 
-    <main>
+    <main class="container" id="main">
         <div>
-            <p>The Maize & Blue Cupboard at the University of Michigan provides food assistance to members of the university community. Its mission is to ensure that individuals—whether facing financial constraints or physical limitations—have equitable access to healthy, nutritious, and nourishing food, as well as the ability to prepare it for themselves or others. This initiative reflects the university’s commitment to addressing food insecurity and promoting well-being within the community.</p>
+            <p>The Maize & Blue Cupboard at the University of Michigan provides food assistance to members of the
+                university community. Its mission is to ensure that individuals—whether facing financial constraints or
+                physical limitations—have equitable access to healthy, nutritious, and nourishing food, as well as the
+                ability to prepare it for themselves or others. This initiative reflects the university’s commitment to
+                addressing food insecurity and promoting well-being within the community.</p>
         </div>
 
-        <div>
+        <section tabindex="0">
             <h2>What they provide</h2>
             <!-- Learned from the w3schools (description lists) -->
             <dl>
                 <dt>Food</dt>
-                <dd>This includes fresh produce such as fruits and vegetables, dairy products like milk, cheese, and yogurt, meat options for protein, and bread for grains. Additionally, they provide frozen foods for longer-lasting meals and shelf-stable items like rice, canned goods, tuna, and other non-perishable staples</dd>
+                <dd>This includes fresh produce such as fruits and vegetables, dairy products like milk, cheese, and
+                    yogurt, protein options such as meat, and grains like bread. Additionally, they offer frozen foods
+                    for long-lasting meals and shelf-stable items like rice, canned goods, tuna, and other
+                    non-perishable essentials.</dd>
                 <dt>Kitchen & Cooking</dt>
-                <dd>This includes dishes and silverware for dining, pots and pans for cooking, and Tupperware for food storage. Additionally, they offer cutting boards, knives, and other important kitchenware</dd>
+                <dd>This includes dishes and silverware for dining, pots and pans for cooking, and Tupperware for food
+                    storage. Additionally, they offer cutting boards, knives, and other important kitchenware</dd>
                 <dt>Personal & Household</dt>
-                <dd>These include trash bags, toilet paper, and cleaning supplies to maintain cleanliness and hygiene. They also offer personal hygiene products such as soap, toothpaste, and feminine care items, along with school supplies like notebooks and pens to support academic needs. For families, the cupboard stocks baby items such as diapers and wipes</dd>
+                <dd>These include trash bags, toilet paper, and cleaning supplies to maintain cleanliness and hygiene.
+                    They also offer personal hygiene products such as soap, toothpaste, and feminine care items, along
+                    with school supplies like notebooks and pens to support academic needs. For families, the cupboard
+                    stocks baby items such as diapers and wipes</dd>
                 <dt>Support</dt>
-                <dd>This includes referrals to experts such as Counseling and Psychological Services (CAPS) for mental health support, the Dean of Students for various student concerns, and the Financial Aid office for financial assistance. Additionally, they can guide students in accessing SNAP (Michigan’s Supplemental Nutrition Assistance Program) for ongoing food security</dd>
+                <dd>This includes referrals to experts such as Counseling and Psychological Services (CAPS) for mental
+                    health support, the Dean of Students for various student concerns, and the Financial Aid office for
+                    financial assistance. Additionally, they can guide students in accessing SNAP (Michigan’s
+                    Supplemental Nutrition Assistance Program) for ongoing food security</dd>
             </dl>
-            <img src="/images/Food.jpg" alt="A basket filled with fresh green, yellow, and red peppers">
-            <img src="/images/Kitchen.jpg" alt="Mother's Maid canned bean products">
-            <img src="/images/Household.jpg" alt="Lightbulbs are selled in this grocery">
-            <img src="/images/Support.jpg" alt="people can get support from the support team">
-        </div>
+            <img src="../images/Food.jpg" alt="A basket filled with fresh green, yellow, and red peppers">
+            <img src="../images/Kitchen.jpg" alt="Mother's Maid canned bean products">
+            <img src="../images/Household.jpg" alt="Lightbulbs are selled in this grocery">
+            <img src="../images/Support.jpg" alt="people can get support from the support team">
+        </section>
 
 
-        <div>
+        <section tabindex="0">
             <h2>Location</h2>
-            <p>Located in the basement of the <a href = "https://www.google.com/maps/place/Betsy+Barbour+Residence,+420+S+State+St,+Ann+Arbor,+MI+48109/@42.2772778,-83.741557,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae38ac94a547:0xf8a4be6e818a1f4!8m2!3d42.2772778!4d-83.741557!16s%2Fg%2F1yl475vzp?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">Betsy Barbour Residence Hall</a>, please enter via the Maynard entrance only to ensure privacy for residents.</p>
+            <p>Located in the basement of the <a
+                    href="https://www.google.com/maps/place/Betsy+Barbour+Residence,+420+S+State+St,+Ann+Arbor,+MI+48109/@42.2772778,-83.741557,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae38ac94a547:0xf8a4be6e818a1f4!8m2!3d42.2772778!4d-83.741557!16s%2Fg%2F1yl475vzp?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">Betsy
+                    Barbour Residence Hall</a>, please enter via the Maynard entrance only to ensure privacy for
+                residents.</p>
             <h2>Hours</h2>
             <p>On Monday 10/30 the Maize and Blue Cupboard will transition to shopping by appointment only.</p>
             <h2>Contact</h2>
-            <p>If you have any questions, please do not hesitate to contact us via this <a href="https://mbc.studentlife.umich.edu/contact/">contact form</a>.</p>
+            <p>If you have any questions, please do not hesitate to contact us via this <a
+                    href="https://mbc.studentlife.umich.edu/contact/">contact form</a>.</p>
             <figure>
-                <img src="/images/Barbour.jpg" alt="The view of the Betsy Barbour Residence Hall.">
+                <img src="../images/Barbour.jpg" alt="The view of the Betsy Barbour Residence Hall.">
                 <figcaption>Betsy Barbour Residence Hall</figcaption>
             </figure>
-        </div>
-        
+        </section>
+
     </main>
 
     <footer>
-        <p>The regents of the University of Michigan &copy; 2024</p>
+        <a class="logo"> <img src="../images/u-m_logo-hex.jpg" alt="UMich Logo"></a>
+        <div>
+            <p>MSI Academic Advising |<a
+                    href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources"> UMSI
+                    Academic Advising</a></p>
+        </div>
+
+        <div>
+            <p>Phone | <a href="tel:+1-734-764-1817">+1-734-764-1817</a></p>
+        </div>
+
+        <div>
+            <p>Additional Contact Information |<a href="https://umich.edu/contact"> Contact Us</a></p>
+        </div>
     </footer>
-    
+
 </body>
 
 </html>
+<!-- Content taken & modified from ChatGPT with the prompt, "Digest the information"
+        ChatGPT. (2024). ChatGPT (October 12th version) [Large language model]. -->

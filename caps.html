@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>CAPS</title>
 </head>
+
 <body>
-    
+
     <header>
-        <a href = "">Skip to Main Content</a>
-        <img src="/images/u-m_logo-horizontal-hex.jpg" alt="UMich Logo">
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
+        <a class="site-logo"><img src="../images/u-m_logo-horizontal-hex.jpg" alt="UMich Logo"></a>
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "academic.html">Academic Support</a></li>
-                <li><a href = "food.html">Food Pantry</a></li>
-                <li><a href = "caps.html">CAPS</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="academic.html">Academic Support</a></li>
+                <li><a href="food.html">Food Pantry</a></li>
+                <li><a href="caps.html" class="active">CAPS</a></li>
             </ul>
         </nav>
         <h1>Counseling and Psychological Services</h1>
     </header>
 
-    <main>
+    <main class="container" id="main">
         <div>
-            <p>Counseling and Psychological Services (CAPS) offers a confidential, safe, and welcoming environment where students can seek comprehensive mental health support. Whether you're dealing with stress, anxiety, depression, or personal challenges, CAPS is dedicated to your well-being. The staff consists of trained mental health professionals who provide a range of services, including individual counseling, group therapy, crisis intervention, and wellness workshops. Every session is treated with strict confidentiality, ensuring a space where you can openly discuss your concerns without judgment. Your emotional and psychological health is their top priority, and CAPS is committed to offering the personalized care and resources necessary to help you thrive during your time at the university.</p>
+            <p>Counseling and Psychological Services (CAPS) provides a confidential and supportive environment for
+                students seeking mental health assistance. Whether facing stress, anxiety, depression, or personal
+                challenges, CAPS offers services like individual counseling, group therapy, crisis intervention, and
+                wellness workshops. The professional staff ensures confidentiality, allowing students to discuss
+                concerns openly. CAPS prioritizes emotional and psychological well-being, offering personalized care and
+                resources to help students thrive at the university.</p>
         </div>
 
-        <div>
+        <section tabindex="0">
             <h2>Support</h2>
             <h3>Individual Counseling Support</h3>
-            <p>Individual Peer Counseling (IPC) is designed to offer a new way to meet the needs of students across the University of Michigan. We are here to support student mental health and offer students a place to vent. Peer counselors are trained in active listening by professional staff here at CAPS. The IPC program connects students with someone of a similar age, interest and background who can serve as a resource or simply someone to “rant” to. While Peer Counselors will keep all information private, IPC is not a substitute for confidential therapy provided by a licensed mental health CAPS staff member.</p>
-            <img src="/images/IPC.jpg" alt="The logo of IPC.">
+            <p>Individual Peer Counseling (IPC) aims to support student mental health at the University of Michigan by
+                providing a space for students to express themselves. Peer counselors, trained in active listening by
+                CAPS professionals, connect students with peers of similar age, interests, and backgrounds. This program
+                serves as a resource for students to vent and share concerns. However, while IPC ensures privacy, it
+                does not replace the confidential therapy provided by licensed mental health staff at CAPS.</p>
+            <img src="../images/IPC.jpg" alt="The logo of IPC.">
             <h3>Group Conselling Support</h3>
-            <p>Group participation requires completing a 20-30-minute brief consultation appointment and/or a 20-30-minute pre-group screening with the group facilitator. CAPS is committed to providing clinical and supportive group services that are responsive to the needs of our students.</p>
+            <p>To participate in group sessions at CAPS, students must first complete a brief consultation appointment
+                and/or a pre-group screening, each lasting 20-30 minutes, with the group facilitator. CAPS is dedicated
+                to offering clinical and supportive group services that address the specific needs of students.</p>
             <!-- learned from w3schools (nested lists) -->
-            <ul>
+            <ul class="support-list">
                 <li>Monday
                     <ul>
                         <li>Nature Therapy</li>
@@ -72,15 +87,16 @@
                         <li>Understanding Self and Others for Graduate Students</li>
                     </ul>
                 </li>
-           </ul>
-           <img src="/images/MCOMMONS-CampusFarmStandOpening-01.jpg" alt="The picture of group discussion.">
-        </div>
+            </ul>
+            <img src="../images/MCOMMONS-CampusFarmStandOpening-01.jpg" alt="The picture of group discussion.">
+        </section>
 
 
-        <div>
+        <section tabindex="0">
             <h2>Location & Time</h2>
             <h3>Location</h3>
-            <p><a href ="https://maps.studentlife.umich.edu/building/michigan-union">Michigan Union, Suite 4079, 530 South State Street, Ann Arbor, MI 48109</a>. Please don't hesitate to reach out.</p>
+            <p><a href="https://maps.studentlife.umich.edu/building/michigan-union">Michigan Union, Suite 4079, 530
+                    South State Street, Ann Arbor, MI 48109</a>. Please don't hesitate to reach out.</p>
             <h3>Time</h3>
             <ul>
                 <li>Monday - Thursday: 8am - 6pm</li>
@@ -89,17 +105,32 @@
             </ul>
 
             <figure>
-                <img src="/images/MCOMMONS-Observatory_EXT-2.jpg" alt="The view of the Counseling building.">
+                <img src="../images/MCOMMONS-Observatory_EXT-2.jpg" alt="The view of the Counseling building.">
                 <figcaption>Counseling Building</figcaption>
             </figure>
-        </div>
-        
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; The regents of the University of Michigan</p>
+        <a class="logo"> <img src="../images/u-m_logo-hex.jpg" alt="UMich Logo"></a>
+        <div>
+            <p>MSI Academic Advising |<a
+                    href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources"> UMSI
+                    Academic Advising</a></p>
+        </div>
+
+        <div>
+            <p>Phone | <a href="tel:+1-734-764-1817">+1-734-764-1817</a></p>
+        </div>
+
+        <div>
+            <p>Additional Contact Information |<a href="https://umich.edu/contact"> Contact Us</a></p>
+        </div>
     </footer>
-    
+
 </body>
 
 </html>
+<!-- Content taken & modified from ChatGPT with the prompt, "Digest the information"
+        ChatGPT. (2024). ChatGPT (October 12th version) [Large language model]. -->
