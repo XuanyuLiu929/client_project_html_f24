@@ -7,7 +7,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(255, 255, 255);
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
     margin: 0;
     padding: 2rem;
 }
@@ -23,7 +23,7 @@ img {
 
 p {
     margin: 1.5rem 0;
-    line-height: 1.5rem;
+    line-height: 1.6rem;
 }
 
 .container {
@@ -99,7 +99,7 @@ h1 {
     font-size: 2.2rem;
     color: #025564;
     font-weight: bold;
-    line-height: 2.6rem;
+    line-height: 2.8rem;
     padding: 1rem 0;
     text-align: center;
 }
@@ -108,14 +108,14 @@ h2 {
     margin: 1rem 0;
     font-weight: bold;
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 2.1rem;
 }
 
 h3 {
     font-size: 1.2rem;
     color: #025564;
     font-weight: bold;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     padding: 1rem 0;
 }
 
