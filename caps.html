@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/u-m_logo-hex.jpg">
     <title>CAPS</title>
 </head>
 
@@ -26,14 +27,14 @@
     </header>
 
     <main class="container" id="main">
-        <div>
+        <section tabindex="0">
             <p>Counseling and Psychological Services (CAPS) provides a confidential and supportive environment for
                 students seeking mental health assistance. Whether facing stress, anxiety, depression, or personal
                 challenges, CAPS offers services like individual counseling, group therapy, crisis intervention, and
                 wellness workshops. The professional staff ensures confidentiality, allowing students to discuss
                 concerns openly. CAPS prioritizes emotional and psychological well-being, offering personalized care and
                 resources to help students thrive at the university.</p>
-        </div>
+        </section>
 
         <section tabindex="0">
             <h2>Support</h2>
@@ -127,7 +128,15 @@
         <div>
             <p>Additional Contact Information |<a href="https://umich.edu/contact"> Contact Us</a></p>
         </div>
+        <p>© <span id="year"></span> The Regents of the University of Michigan 500 S. State Street, Ann Arbor, MI 48109
+            USA.</p>
     </footer>
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+        alert("Hi! Welcome to the Counseling and Psychological Services");
+        console.log("JavaScript console! – Find this message")
+    </script>
 
 </body>
 

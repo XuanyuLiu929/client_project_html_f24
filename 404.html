@@ -6,20 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Student Success Portal</title>
+    <link rel="icon" href="images/u-m_logo-hex.jpg">
+    <title>404 NOT FOUND</title>
 </head>
 
 <body>
-
     <header>
         <div class="skip"><a href="#main">Skip to Main Content</a></div>
         <a class="site-logo"><img src="images/u-m_logo-horizontal-hex.jpg" alt="UMich Logo"></a>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="academic.html">Academic Support</a></li>
                 <li><a href="food.html">Food Pantry</a></li>
                 <li><a href="caps.html">CAPS</a></li>
             </ul>
         </nav>
     </header>
+
+    <main class="container" id="main">
+        <h1>404 Error: Page Not Found</h1>
+        <p class="error-page">We’re sorry, the page you were looking for can’t be located. <br>
+            You may have typed the address incorrectly. If you think this is the case, please try retyping the address
+            and resubmitting the page. If you have arrived at this page from a bookmark, the page may no longer be
+            available.
+        </p>
+        <button class="button" type="button" onclick="location.href='index.html'"> Return to Homepage </button>
+
+        <form action="https://formspree.io/f/mbljopkq" method="POST">
+            <label for=“name_id”>Your Name</label> <input type="text" placeholder="Enter Your Name" name="mnemonic_name"
+                id=“name_id”>
+            <label for="email">Your email:</label> <input type="email" name="email" id="email"
+                placeholder="Enter Your Email">
+            <label for="message">Your message:</label> <textarea name="message" id="message"
+                placeholder="Enter Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </main>
+
+
+    <footer>
+        <a class="logo"> <img src="images/u-m_logo-hex.jpg" alt="UMich Logo"></a>
+        <div>
+            <p>MSI Academic Advising |<a
+                    href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources"> UMSI
+                    Academic Advising</a></p>
+        </div>
+
+        <div>
+            <p>Phone | <a href="tel:+1-734-764-1817">+1-734-764-1817</a></p>
+        </div>
+
+        <div>
+            <p>Additional Contact Information |<a href="https://umich.edu/contact"> Contact Us</a></p>
+        </div>
+        <p>© <span id="year"></span> The Regents of the University of Michigan 500 S. State Street, Ann Arbor, MI 48109
+            USA.</p>
+    </footer>
+
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

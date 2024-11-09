@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/u-m_logo-hex.jpg">
     <title>Food Pantry</title>
 </head>
 
@@ -25,13 +26,13 @@
     </header>
 
     <main class="container" id="main">
-        <div>
+        <section tabindex="0">
             <p>The Maize & Blue Cupboard at the University of Michigan provides food assistance to members of the
                 university community. Its mission is to ensure that individuals—whether facing financial constraints or
                 physical limitations—have equitable access to healthy, nutritious, and nourishing food, as well as the
                 ability to prepare it for themselves or others. This initiative reflects the university’s commitment to
                 addressing food insecurity and promoting well-being within the community.</p>
-        </div>
+        </section>
 
         <section tabindex="0">
             <h2>What they provide</h2>
@@ -56,10 +57,14 @@
                     financial assistance. Additionally, they can guide students in accessing SNAP (Michigan’s
                     Supplemental Nutrition Assistance Program) for ongoing food security</dd>
             </dl>
-            <img src="images/Food.jpg" alt="A basket filled with fresh green, yellow, and red peppers">
-            <img src="images/Kitchen.jpg" alt="Mother's Maid canned bean products">
-            <img src="images/Household.jpg" alt="Lightbulbs are selled in this grocery">
-            <img src="images/Support.jpg" alt="people can get support from the support team">
+
+            <div class="food-image">
+                <img src="images/Food.jpg" alt="A basket filled with fresh green, yellow, and red peppers">
+                <img src="images/Kitchen.jpg" alt="Mother's Maid canned bean products">
+                <img src="images/Household.jpg" alt="Lightbulbs are selled in this grocery">
+                <img src="images/Support.jpg" alt="people can get support from the support team">
+            </div>
+
         </section>
 
 
@@ -97,7 +102,15 @@
         <div>
             <p>Additional Contact Information |<a href="https://umich.edu/contact"> Contact Us</a></p>
         </div>
+        <p>© <span id="year"></span> The Regents of the University of Michigan 500 S. State Street, Ann Arbor, MI 48109
+            USA.</p>
     </footer>
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+        alert("Hi! Welcome to the Food Pantry Website");
+        console.log("JavaScript console! – Find this message")
+    </script>
 
 </body>
 

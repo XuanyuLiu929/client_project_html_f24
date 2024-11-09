@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/u-m_logo-hex.jpg">
     <title>Academic Support</title>
 </head>
 
@@ -26,13 +27,13 @@
     </header>
 
     <main class="container" id="main">
-        <div>
+        <section tabindex="0">
             <p>At the University of Michigan School of Information (UMSI), students are provided with a variety of
                 resources to support their academic success. Personalized academic advising helps with course selection
                 and overcoming challenges, while the University Library offers access to extensive research resources.
                 Additionally, tutoring services and the UMSI Writing Center assist with mastering difficult subjects and
                 improving writing skills, ensuring students can thrive and reach their educational goals.</p>
-        </div>
+        </section>
 
         <section tabindex="0">
             <h2>MSI Degree Requirements</h2>
@@ -104,6 +105,7 @@
         </section>
 
     </main>
+
     <footer>
         <a class="logo"> <img src="images/u-m_logo-hex.jpg" alt="UMich Logo"></a>
         <div>
@@ -119,8 +121,17 @@
         <div>
             <p>Additional Contact Information |<a href="https://umich.edu/contact"> Contact Us</a></p>
         </div>
+
+        <p>© <span id="year"></span> The Regents of the University of Michigan 500 S. State Street, Ann Arbor, MI 48109
+            USA.</p>
     </footer>
 
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+        alert("Hi! Welcome to the Academic Support Website");
+        console.log("JavaScript console! – Find this message")
+        // for trouble-shooting
+    </script>
 </body>
 
 </html>

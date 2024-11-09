@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/u-m_logo-hex.jpg">
     <title>Student Success Portal</title>
 </head>
 
@@ -97,15 +98,18 @@
                 resources to help you enjoy life outside the classroom:</p>
 
             <ul>
-                <li><strong>Student Organizations:</strong> Join one of the many student organizations to connect with
+                <li><strong>Student Organizations:</strong> <br>Join one of the many student organizations to connect
+                    with
                     peers who share your interests and passions.</li>
-                <li><strong>Arts and Culture:</strong> Explore UM's vibrant arts scene with events, exhibitions, and
+                <li><strong>Arts and Culture:</strong> <br> Explore UM's vibrant arts scene with events, exhibitions,
+                    and
                     performances happening year-round.</li>
-                <li><strong>Career Services:</strong> Utilize career counseling, job search resources, and networking
+                <li><strong>Career Services:</strong> <br> Utilize career counseling, job search resources, and
+                    networking
                     opportunities to prepare for your professional future.</li>
-                <li><strong>Community Engagement:</strong> Get involved with local volunteering opportunities and
+                <li><strong>Community Engagement:</strong> <br> Get involved with local volunteering opportunities and
                     community service projects to make a positive impact.</li>
-                <li><strong>Housing and Dining:</strong> Find information on on-campus housing options and dining
+                <li><strong>Housing and Dining:</strong> <br> Find information on on-campus housing options and dining
                     services to ensure a comfortable living experience.</li>
             </ul>
         </section>
@@ -127,7 +131,15 @@
         <div>
             <p>Additional Contact Information |<a href="https://umich.edu/contact"> Contact Us</a></p>
         </div>
+        <p>© <span id="year"></span> The Regents of the University of Michigan 500 S. State Street, Ann Arbor, MI 48109
+            USA.</p>
     </footer>
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+        alert("Hi! Welcome to the Home Page");
+        console.log("JavaScript console! – Find this message")
+    </script>
 </body>
 
 </html>
