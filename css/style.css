@@ -261,7 +261,7 @@ form {
 }
 
 form label {
-    font-weight: #FFCB05;
+    font-weight: bold;
 }
 
 input[type="text"],
